@@ -1,0 +1,244 @@
+
+.konga{
+    background-color:#ED017F;
+}
+
+input {
+        width: 400px;
+        height: 40px;
+}
+.bb:hover{
+    background-color: white;
+    color: #ED017F;
+    /* padding:0px */
+    }
+.bb{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+.Help, .login,.yemi{
+    color: white;   
+}
+.lists:hover{
+    background-color:white;
+    color: #ED017F;
+    padding: 0px;
+}
+.categories{
+    background-color: #94004F;
+}
+ @media screen and (max-width:768px){
+    .Toptea{
+     max-width: 800px !important;
+      /* background-color: blue;  */
+     max-height: 300px;
+    }
+}
+@media screen and  (max-width:480px) {
+   .Totally{
+      display:none;
+   }
+}
+@media screen and (max-width:835px) {
+    .Finally{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.wale{
+    background-color: #94004F;
+    color: white;
+}
+ .yellowDiv,.Boss {
+    margin: 15px;
+    padding: 3px;
+    overflow: auto;
+  }
+  
+  .yellowDiv,.Boss {
+    height: 200px;
+    width: 100%;
+  }
+  .Boss {
+    overscroll-behavior-x: contain;
+  }
+  
+  
+  .Berelete {
+    /* margin:0px;
+   padding: px; */
+   overflow-x: auto;
+ }  
+ .Berelete {
+  height: 350px;
+  width: 100%;
+}
+.Berelete {
+  overscroll-behavior-x: contain;
+}
+ .walex{
+    background-color: #FFE9E9;
+ }
+
+ .Nexus {
+     margin: 15px;
+    padding: 3px;
+    overflow-x: auto;
+  }
+  /* .ChildDiv,.Boss {
+    width: 100%;
+  } */
+  
+  .Nexus {
+    height: 450px;
+    width: 100%;
+  }
+  .Nexus {
+    overscroll-behavior-x: contain;
+  }
+  .Officialk{
+    background-color: #F5A623;
+  }
+.card-img-top{
+    width: 320px;
+}
+.spread{
+    background-color: #2E2E2E;
+    color: white;
+    flex-wrap: wrap;
+}
+ .input,.Email{
+    width: 10px;
+}
+  
+
+ .img {
+    width: 200px;
+  }
+  .lists {
+    list-style-type: none;
+  }
+  ul li {
+    color: white;
+    white-space: nowrap;
+  }
+  ul li>p{
+    color: white;
+  }
+  .MyCart {
+    white-space: nowrap;
+  }
+  .menuBtn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: inherit;
+    color: white;
+    display: none;
+  }
+  .smlScreen {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+  }
+  .smallNav {
+    position: absolute;
+    top: -85vh;
+    left: 0;
+    width: 100%;
+  }
+  .droppBtthn:focus-within .smallNav {
+    position: absolute;
+    top: 0;
+    transition: all linear 1s;
+  }
+  .cancelBtn:focus-within .smallNav {
+    position: absolute;
+    top: -80vh;
+    transition: all linear 1s;
+  }
+
+  @media (max-width: 1000px) {
+    .menuBtn {
+      display: block !important ;
+    }
+  }
+  @media (max-width: 1029px) {
+    .navigation-container {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .login {
+      display: none !important;
+    }
+    .MyCart {
+      display: none !important;
+    }
+  } 
+  .Cash{
+     display: flex; 
+    width: 450px;
+     padding: 10px;
+    font-size: medium;
+    border: 50px;
+  }
+  .cahs{
+    display: inline-block;
+    width: 450px;
+     padding: 10px;
+    font-size: medium;
+    border: 50px;
+    margin-top: 20px;
+  }
+  .hr{
+    display: flex; 
+   margin-left: 20px;
+   align-items: baseline;} 
+   
+    .hr>hr{width: 200px;
+       height: 5px;} 
+    .tastes{
+        text-decoration: none;
+        color: #BC8BCB;
+        margin-top: 10%;
+    }   
+
+    /* kongastore css */
+    .pss{
+        text-decoration: none;
+        font-size: 13px;
+        color: #2E2E2E;
+    }
+    .pss1{
+        text-decoration: none;
+        font-size: 15px;
+        color: #94004F;
+    }
+    .stores{
+        background-color: #E2E2E2;
+        font-size: 10px;
+    }
+
+    .flex-container {
+        display: flex;     
+      }
+      
+      .flex-container > div {
+        background-color: whitesmoke;
+        margin: 10px;
+        padding: 5px;
+        font-size: 13px;
+      }
+      .Ikeja h6{
+        font-size: 14px;
+      }
+      /* //sel on konga */
+      
+      .flex-container1 > div {
+        background-color: whitesmoke;
+      }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="mb-4 px-5 ">
+        <img src="./Pictures/cd-removebg-preview.png" alt="">
+    
+    <div class="form-container bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-6 text-center">Create An Account</h1>
+        <form>
+            <div class="mb-4">
+                <h1>firstname</h1>
+                <input type="text" placeholder="Enter First Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <h2>Lastname</h2>
+                <input type="text" placeholder="Enter Last Name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <h2>email</h2>
+                <input type="email" placeholder="Enter Email Address" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <h2>phone number</h2>
+                <input type="tel" placeholder="Enter Phone Number" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-4 relative">
+                <h2>password</h2>
+                <input id="password" type="password" placeholder="Enter Password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <button type="button" onclick="togglePassword()" class="absolute right-3 top-2 text-gray-600 focus:outline-none">Show</button>
+            </div>
+            <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">Create an Account</button>
+        </form>
+        <p class="text-center text-sm text-gray-600 mt-4">
+            By signing up you accept our <a href="#" class="text-blue-500 hover:underline">terms and conditions</a> & <a href="#" class="text-blue-500 hover:underline">privacy policy</a>
+        </p>
+        <div class="mt-6 text-center text-sm">
+            Already have an Account? <a href="./New K/SecL.html" class="text-pink-500 hover:underline">Login</a>
+        </div>
+    </div>
+</div>
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleButton = passwordInput.nextElementSibling;
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.textContent = 'Show';
+            }
+        }
+    </script>
+</body>
+</html>

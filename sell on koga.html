@@ -1,0 +1,321 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="./konga.css">
+     <style>
+      .navbar-custom {
+          background-color: #ff0099;
+      }
+      .navbar-nav .nav-item .nav-link {
+          color: white !important;
+      }
+      .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      .search-bar {
+          width: 70%;
+      }
+      .search-button {
+          background-color: orange;
+          border: none;
+          color: white;
+      }
+      .cart-button {
+          background-color: #00cc66;
+          color: white;
+      }
+      .category-bar {
+          background-color: #aa0078;
+      }
+      .category-bar .nav-link {
+          color: white !important;
+      }
+      .navbar-brand,
+      .navbar-nav,
+      .form-inline,
+      .navbar-nav.ml-auto {
+          margin-right: 1rem;
+      }
+  </style>
+    </head>
+<body>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="./Pictures/k_travels2.png" alt="">
+             </div>
+                   <div class="col">
+                    <img class="img-fluid" src="./Pictures/konga_pay.png" alt="">
+                   </div>
+                        <div class="col">
+                            <img class="img-fluid" src="./Pictures/new_konga_drinks.png" alt="">
+                           </div>
+                                  <div class="col">
+                                    <img class="img-fluid" src="./Pictures/konga_health.png" alt="">
+                                  </div>
+                                   <div class="col">
+                                    <img class="img-fluid" src="./Pictures/k_express2.png" alt="">
+                                   </div>
+                                 <div class="col">
+                                    <img class="img-fluid" src="./Pictures/new_konga_groceries.png" alt="">
+                               </div>
+                             <div class="col">
+                                  <img class="img-fluid" src="./Pictures/kongaTV.png" alt="">
+                         </div>
+                    <div class="col">
+                        <img class="img-fluid" src="./Pictures/KongaNow.png" alt="">
+             </div> 
+        </div>
+    </div>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <a class="navbar-brand" href="./Index.html">
+              <img src="./Pictures/cd-removebg-preview.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-4">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./Kongastores.html">Store Locator</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./sell on koga.html">Sell on Konga</a>
+                  </li>
+              </ul>
+              <form class="w-100 my-2 my-lg-0 mx-auto">
+                  <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search for products, brands and categories" aria-label="Search">
+              </form>
+              <button class="btn search-button ml-auto" type="submit">Search</button>
+              <ul class="navbar-nav ml-4 gap-5">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./New K/FirstL.html">Login / Signup</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link cart-button" href="#">My Cart <span class="badge badge-light">0</span></a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      
+      <!-- Category Bar -->
+      <nav class="navbar navbar-expand-lg category-bar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#categoryNav" aria-controls="categoryNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="categoryNav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">All Categories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Computers and Accessories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Phones and Tablets</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Electronics</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Konga Fashion</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home and Kitchen</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Baby, Kids and Toys</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Beauty, Health & Personal Care</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      
+<div class=" text-start mx-5 d-flex">
+    <a href="./Index.html"> <h6 class="pss">Home ></h6></a>
+       <a href="./Kongastores.html"><h6 class="pss1">Store locator</h6></a>
+         </div>             
+              <div class="text-start mx-5 fw-bold">
+        <h1>Sell on Konga</h1>
+    </div>
+        <section class="container w-100 my-5 justify-content-center align-items-center d-flex flex-container1">
+             <div class="row">
+                    <div class="img-fluid col-lg-4 col-md-6">
+                       <img class=" w-100" src="https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/assets/images/content/sell-on-konga.png" alt="img-fluid">
+                           </div>
+                               <div class="text-center fs-4 col-lg-6 col-md-6">
+                                 <h5 class="fs-1 fw-bold">Grow your business online</h5>
+                                   <p>Reach millions of buyers in every state in Nigeria easily, get your store on Konga today!</p>  
+                              </div>
+                            </div>     
+                     </section>
+                                   <section class="container mx-auto flex-container1">
+                                      <div class="row">
+                                         <div class="text-center fw-bold">
+                                            <h1>Why Sell on Konga?</h1>
+                                              </div>
+                                                <div class="img-fluid col-lg-4 col-md-4">
+                                                    <img style="width: 70%;" src="https://www-konga-com-res.cloudinary.com/image/upload/w_300,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/online-payment.png" alt=" img-fluid">
+                                                      <h6 class="text-start mx-5">Earn More Money</h6>
+                                                      <p class="text-start">Konga is one of the largest websites in Nigeria. Sell to over 50 million buyers across every state in Nigeria</p>
+                                                </div>
+                                                <div class="img-fluid col-lg-4 col-md-4">
+                                                    <img style="width:70%;" src="https://www-konga-com-res.cloudinary.com/image/upload/w_300,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/online-payment.png" alt=" img-fluid">
+                                                      <h6 class="text-start mx-5">Communication is Easy</h6>
+                                                      <p class="text-start">We make it easy to exchange messages with buyers who may have questions.</p>
+                                                </div>          
+                                                <div class="img-fluid col-lg-4 col-md-4">
+                                                    <img style="width: 70%;" src="https://www-konga-com-res.cloudinary.com/image/upload/w_300,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/online-payment.png" alt="w-100 img-fluid">
+                                                      <h6 class="text-start mx-5">Low Commissions</h6>
+                                                      <p class="text-start">Commission fees are as low as 3%, and you only pay when you successfully sell your product</p>
+                                                </div>
+                                                <div class="img-fluid col-lg-4 col-md-4">
+                                                    <img style="width: 70%;" src="https://www-konga-com-res.cloudinary.com/image/upload/w_300,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/online-payment.png" alt=" img-fluid">
+                                                      <h6 class="text-start mx-5">You Have Our Support 24/7</h6>
+                                                      <p class="text-start mx-5">Konga provides various tools to increase your success including: our online SellerHQ and our dedicated merchant support teams.</p>
+                                                </div>
+                                                <div class="img-fluid col-lg-4 col-md-4">
+                                                    <img style="width: 70%;" src="https://www-konga-com-res.cloudinary.com/image/upload/w_300,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/online-payment.png" alt=" img-fluid">
+                                                      <h6 class="text-start mx-5">You’re in Control</h6>
+                                                      <p class="text-start">You choose the price for your return policy, your delivery method on paid orders, and other important options.</p>
+                                                </div>          
+                                                <div class="img-fluid col-lg-4 col-md-4">
+                                                    <img style="width: 70%;" src="https://www-konga-com-res.cloudinary.com/image/upload/w_300,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/online-payment.png" alt="w-100 img-fluid">
+                                                      <h6 class="text-start mx-5">We Make Sure It’s Safe</h6>
+                                                      <p class="text-start">Konga is the safest and most trusted platform to buy and sell online in Nigeria. We’ve built a community that takes safety & security seriously for both buyers and sellers.</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                              <section class="container my-5">
+                                                <div class="row">
+                                                    <div class="text-start fs-5 fw-bold mx-5">
+                                                       <h2>Earn Money, Hassle Free</h2>
+                                                    </div>
+                                                    <p class="pt-2 btn btn-outline-danger mx-5 " style="width: 20%;">Register Now</p>
+                                                
+                                                </div>
+                                              </section>
+                                              <section class="container d-flex gap-5 spread ">
+                                              <div class="col-lg-2">
+                                                 <h6>EMAIL SUPPORT</h6>
+                                                 <P >help@konga.com</P>
+                                              </div>
+                                              <div class="col-lg-2">
+                                              <h6>PHONE SUPPORT</h6>
+                                              <P >
+                                                  0708 063 5700, 0201 888 3435</P>
+                                           </div>
+                                           <div class="col-lg-2">
+                                           <h6>WHATSAPP</h6>
+                                              <p>0907 0038 400, 0809 460 5555</p>
+                                          </div>
+                                          <div class="col-lg-2">
+                                                 <h6>GET LATEST DEALS
+                                                 <p>Our best promotions sent to your inbox.</p>
+                                              </div>
+                                              <div class="col-lg-2">
+                                                  <input type="email" id="email" name="email" required placeholder="Email Address" style="width: 250px; height: 50px;">
+                                           </div>
+                                           <!-- <div class="img-fluid col-lg-2">
+                                            <img src="https://www-konga-com-res.cloudinary.com/image/upload/w_500,f_auto,fl_lossy,dpr_2.0,q_auto/assets/images/content/electronics.png" alt="img-fluid">
+                                           </div> -->
+                                           </section> 
+
+                                           <footer class="bg-dark text-white pt-4">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                  <!-- <div class="col-md mb-4 ">
+                                                    <img src="https://via.placeholder.com/150" alt="Payment Methods" class="img-fluid">
+                                                </div> -->
+                                                  
+                                                  <!-- Customer Service -->
+                                                    <div class="col-md mb-4 mx-4">
+                                                        <h5>ABOUT KONGA</h5>
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="#!" class="text-white">Contact us</a></li>
+                                                            <li><a href="#!" class="text-white">About Us</a></li>
+                                                            <li><a href="#!" class="text-white">Careers</a></li>
+                                                            <li><a href="#!" class="text-white">Our Blog</a></li>
+                                                            <li><a href="#!" class="text-white">Forum</a></li>
+                                                            <li><a href="#!" class="text-white">Terms and Conditions</a></li>      
+                                                        </ul>
+                                                    </div>
+                                                    <!-- About Us -->
+                                                    <div class="col-md mb-4">
+                                                        <h5>PAYMENT</h5>
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="#!" class="text-white">Konga Pay</a></li>
+                                                            <li><a href="#!" class="text-white">Wallet</a></li>
+                                                            <li><a href="#!" class="text-white">Verve</a></li>
+                                                            <li><a href="#!" class="text-white">Mastercard</a></li>
+                                                            <li><a href="#!" class="text-white">Visa</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <!-- Connect with Us -->
+                                                    <div class="col-md mb-4">
+                                                        <h5>BUYING ON KONGA</h5>
+                                                        <ul class="list-unstyled">
+                                                            <li><a href="#!" class="text-white"> Buyer Safety Center</a></li>
+                                                            <li><a href="#!" class="text-white">FAQS</a></li>
+                                                            <li><a href="#!" class="text-white"> Delivery</a></li>
+                                                            <li><a href="#!" class="text-white">Konga Return Policy</a></li>
+                                                            <li><a href="#!" class="text-white"> Digital Service</a></li>
+                                                            <li><a href="#!" class="text-white">Bulk purchase</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="col-md mb-4">
+                                                      <h5>MORE INFO</h5>
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#!" class="text-white">Site Map</a></li>
+                                                          <li><a href="#!" class="text-white">Track My Order</a></li>
+                                                          <li><a href="#!" class="text-white">Privacy Policy</a></li>
+                                                          <li><a href="#!" class="text-white">Authentic Item Policy</a></li>
+                                                      </ul>
+                                                  </div>
+                                          
+                                                  <div class="col-md mb-4">
+                                                    <h5>MAKE MONEY ON KONGA</h5>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#!" class="text-white">Site Map</a></li>
+                                                      </ul>
+                                                    </div>
+                                          
+                                                  <div class="col-md mb-4">
+                                                    <h5>CONNECT WITH US</h5>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#!" class="text-white"><i class="fab fa-facebook"></i> Facebook</a></li>
+                                                        <li><a href="#!" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                                        <li><a href="#!" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                                        <li><a href="#!" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                                                    </ul>
+                                                </div>
+                                          
+                                                  </div>
+                                                <div class="text-center py-3 border-top border-secondary mt-4">
+                                                    &copy; 2024 Konga. All Rights Reserved.
+                                                </div>
+                                            </div>
+                                          </footer>
+                                          <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+                                          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                                          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+3pqtD5v2zDMCf39eMC78dG35qbg7" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

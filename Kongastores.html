@@ -1,0 +1,649 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="./konga.css">
+     <style>
+      .navbar-custom {
+          background-color: #ff0099;
+      }
+      .navbar-nav .nav-item .nav-link {
+          color: white !important;
+      }
+      .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      .search-bar {
+          width: 70%;
+      }
+      .search-button {
+          background-color: orange;
+          border: none;
+          color: white;
+      }
+      .cart-button {
+          background-color: #00cc66;
+          color: white;
+      }
+      .category-bar {
+          background-color: #aa0078;
+      }
+      .category-bar .nav-link {
+          color: white !important;
+      }
+      .navbar-brand,
+      .navbar-nav,
+      .form-inline,
+      .navbar-nav.ml-auto {
+          margin-right: 1rem;
+      }
+  </style>
+    </head>
+<body>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="./Pictures/k_travels2.png" alt="">
+             </div>
+                   <div class="col">
+                    <img class="img-fluid" src="./Pictures/konga_pay.png" alt="">
+                   </div>
+                        <div class="col">
+                            <img class="img-fluid" src="./Pictures/new_konga_drinks.png" alt="">
+                           </div>
+                                  <div class="col">
+                                    <img class="img-fluid" src="./Pictures/konga_health.png" alt="">
+                                  </div>
+                                   <div class="col">
+                                    <img class="img-fluid" src="./Pictures/k_express2.png" alt="">
+                                   </div>
+                                 <div class="col">
+                                    <img class="img-fluid" src="./Pictures/new_konga_groceries.png" alt="">
+                               </div>
+                             <div class="col">
+                                  <img class="img-fluid" src="./Pictures/kongaTV.png" alt="">
+                         </div>
+                    <div class="col">
+                        <img class="img-fluid" src="./Pictures/KongaNow.png" alt="">
+             </div> 
+        </div>
+    </div>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <a class="navbar-brand" href="./Index.html">
+              <img src="./Pictures/cd-removebg-preview.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-4">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./Kongastores.html">Store Locator</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./sell on koga.html">Sell on Konga</a>
+                  </li>
+              </ul>
+              <form class="w-100 my-2 my-lg-0 mx-auto">
+                  <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search for products, brands and categories" aria-label="Search">
+              </form>
+              <button class="btn search-button ml-auto" type="submit">Search</button>
+              <ul class="navbar-nav ml-4 gap-5">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./New K/FirstL.html">Login / Signup</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link cart-button" href="#">My Cart <span class="badge badge-light">0</span></a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      
+      <!-- Category Bar -->
+      <nav class="navbar navbar-expand-lg category-bar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#categoryNav" aria-controls="categoryNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="categoryNav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">All Categories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Computers and Accessories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Phones and Tablets</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Electronics</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Konga Fashion</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home and Kitchen</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Baby, Kids and Toys</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Beauty, Health & Personal Care</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      
+     <!-- Small Screens Nav -->
+     <!-- <nav class="bg-dark smallNav">
+        <div class="d-flex align-items-center gap-3">
+          <div class="img">
+            <img
+              class="img-fluid w-100 h-100"
+              src="./cd-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="cancelBtn">
+            <button class="menuBtn border-0">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+        </div>
+        <div class="d-grid d-flex gap-5 p-3">
+            <p class="pt-2 btn btn-outline-danger w-50">Login</p>
+            <button class="btn btn-outline-danger w-50 ">
+              signup
+            </button>
+          </div>   
+        <ul class="d-grid align-items-center gap-3 pt-2">
+            <h6 class="yemi">categories</h6>
+          <li class="lists smlScreen">Computers&nbsp;Accessories</li>
+          <li class="lists smlScreen">Phones and&nbsp; Tablets</li>
+          <li class="lists smlScreen">Electronics</li>
+          <li class="lists smlScreen">Konga Fashion</li>
+          <li class="lists smlScreen">Home and Kitchen</li>
+          <li class="lists smlScreen">Other&nbsp;Categories</li>
+          <li class="lists smlScreen">Drinks &nbsp;&Groceries</li>
+        </ul>
+       </nav>
+    </div>
+  </div>
+</nav>
+</div> -->
+
+          <div class=" text-start mx-5 d-flex">
+                <a href="./Index.html"> <h6 class="pss">Home ></h6></a>
+                   <a href=""><h6 class="pss1">Store locator</h6></a>
+                     </div>             
+                          <div class="text-start mx-5 fw-bold">
+                    <h1>Store Locator</h1>
+                </div>
+          <section class="container">
+            <div class="row">
+                <div class="col-3">
+                    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                    <select class="form-select" id="inlineFormSelectPref">
+                      <option disabled selected>state</option>
+                      <option value="1">Abia</option>
+                      <option value="2">Adamawa</option>
+                      <option value="3">Akwa-Ibom</option>
+                      <option value="1">Anambra</option>
+                      <option value="2">Bauchi</option>
+                      <option value="3">Bayelsa</option> 
+                    </select>
+                  </div>
+                  <div class="col-3">
+                    <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                    <select class="form-select" id="inlineFormSelectPref">
+                      <option disabled selected>City</option>
+                      <option value="1">Umaya</option>
+                      <option value="2">Yola</option>
+                      <option value="3">Uyo</option>
+                      <option value="1">Akwa</option>
+                      <option value="2">Bauchi</option>
+                      <option value="3">Yenagoa</option> 
+                    </select>
+                  </div>
+                  <div class="col-6 d-flex">
+                      <button class=" btn btn-outline-danger ">Apply for selection</button>
+                       
+                             <div class="col-6 ">
+                                 <button class=" btn btn-outline-danger mx-4">Show All</button>
+                             </div>
+                           </div>
+                           
+                              <div class="text-start my-3 py-1 stores">
+                                <h6>There are 30 Konga stores</h6>
+                              </div>
+                          </div>
+                    </section>
+                    <section class="container">
+                    <div class="row">
+                    <div class="flex-container ">
+                        <div class=" bootstrap-icons w-50 d-flex">
+                          <i class="bi bi-gift"></i>
+                          <!-- <i class="bi bi-geo-alt-fill"></i> -->
+                             <div class="text-start mx-2 Ikeja">
+                                 <p  class="bi bi-geo-alt-fill">KongaShop Ikeja Konga Store</p></i>
+                                    <h6>  16, Otigba Street, Adj. Police Post, Computer Village, Ikeja</h6>
+                                      <hr>
+                                          <div class="text-start Ikeja ">
+                                         <p>Working Hours</p>
+                                      <h6>Monday-Saturday,8am-6pm</h6>
+                                   <p>Phone Number</p>
+                              <h6>07032744163</h6>
+                           </div>
+                        </div>
+                    </div>
+                    <div class=" bootstrap-icons w-50 d-flex">
+                        <i class="bi bi-gift"></i>
+                           <div class="text-start mx-2 Ikeja">
+                               <p>KongaShop Gbagada Konga Store</p>
+                                  <h6>1 Redemption Crescent</h6>
+                                    <hr>
+                                        <div class="text-start Ikeja ">
+                                       <p>Working Hours</p>
+                                    <h6>Monday-Saturday,8am-6pm</h6>
+                                 <p>Phone Number</p>
+                            <h6>09120146206</h6>
+                         </div>
+                      </div>
+                  </div>
+                  <div class=" bootstrap-icons w-50 d-flex">
+                    <i class="bi bi-gift"></i>
+                       <div class="text-start mx-2 Ikeja">
+                           <p>KongaShop Surulere Konga Store</p>
+                              <h6>78 Bode Thomas Road</h6>
+                                <hr>
+                                    <div class="text-start Ikeja ">
+                                   <p>Working Hours</p>
+                                <h6>Monday-Saturday,8am-6pm</h6>
+                             <p>Phone Number</p>
+                        <h6>09010401207</h6>
+                     </div>
+                  </div>
+              </div>
+         </div>
+    </div>
+</section>
+<section class="container">
+    <div class="row">
+    <div class="flex-container ">
+        <div class=" bootstrap-icons w-50 d-flex">
+          <i class="bi bi-gift"></i>
+             <div class="text-start mx-2 Ikeja">
+                 <p>KongaShop Ikoyi Konga Store</p>
+                    <h6> 2 Norman Williams By Keffi Off Awolowo Road</h6>
+                      <hr>
+                          <div class="text-start Ikeja ">
+                         <p>Working Hours</p>
+                      <h6>Monday-Saturday,8am-6pm</h6>
+                   <p>Phone Number</p>
+              <h6>08095460751</h6>
+           </div>
+        </div>
+    </div>
+    <div class=" bootstrap-icons w-50 d-flex">
+        <i class="bi bi-gift"></i>
+           <div class="text-start mx-2 Ikeja">
+               <p>KongaShop Airport Road Konga Store</p>
+                  <h6>33 Muritala Mohammed Airport Road</h6>
+                    <hr>
+                        <div class="text-start Ikeja ">
+                       <p>Working Hours</p>
+                    <h6>Monday-Saturday,8am-6pm</h6>
+                 <p>Phone Number</p>
+            <h6>08090235696</h6>
+         </div>
+      </div>
+  </div>
+  <div class=" bootstrap-icons w-50 d-flex">
+    <i class="bi bi-gift"></i>
+       <div class="text-start mx-2 Ikeja">
+           <p>KongaShop Admiralty Konga Store</p>
+              <h6>Plot 6 No 69a Admiralty Way Lekki, Lagos</h6>
+                <hr>
+                    <div class="text-start Ikeja ">
+                   <p>Working Hours</p>
+                <h6>Monday-Saturday,8am-6pm</h6>
+             <p>Phone Number</p>
+        <h6>09036033723</h6>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+    <div class="row">
+    <div class="flex-container ">
+        <div class=" bootstrap-icons w-50 d-flex">
+          <i class="bi bi-gift"></i>
+             <div class="text-start mx-2 Ikeja">
+                 <p>KongaShop Cherub Mall Konga Store</p>
+                    <h6>Km 18 Lekki Epe Express Way, Alpha Beach</h6>
+                      <hr>
+                          <div class="text-start Ikeja ">
+                         <p>Working Hours</p>
+                      <h6>Monday-Saturday,8am-6pm</h6>
+                   <p>Phone Number</p>
+              <h6>08028339802</h6>
+           </div>
+        </div>
+    </div>
+    <div class=" bootstrap-icons w-50 d-flex">
+        <i class="bi bi-gift"></i>
+           <div class="text-start mx-2 Ikeja">
+               <p>KongaShop Abuja1 Konga Store</p>
+                  <h6>Plot 20 Port Harcourt Crescent, Area 11</h6>
+                    <hr>
+                        <div class="text-start Ikeja ">
+                       <p>Working Hours</p>
+                    <h6>Monday-Saturday,8am-6pm</h6>
+                 <p>Phone Number</p>
+            <h6>08028342515</h6>
+         </div>
+      </div>
+  </div>
+  <div class=" bootstrap-icons w-50 d-flex">
+    <i class="bi bi-gift"></i>
+       <div class="text-start mx-2 Ikeja">
+           <p>KongaShop Abuja2 Konga Store</p>
+              <h6>Banex Plaza Beside Unity Bank, Wuse</h6>
+                <hr>
+                    <div class="text-start Ikeja ">
+                   <p>Working Hours</p>
+                <h6>Monday-Saturday,8am-6pm</h6>
+             <p>Phone Number</p>
+        <h6>09070814351</h6>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+    <div class="row">
+    <div class="flex-container ">
+        <div class=" bootstrap-icons w-50 d-flex">
+          <i class="bi bi-gift"></i>
+             <div class="text-start mx-2 Ikeja">
+                 <p>KongaShop Ikeja Konga Store</p>
+                    <h6>  16, Otigba Street, Adj. Police Post, Computer Village, Ikeja</h6>
+                      <hr>
+                          <div class="text-start Ikeja ">
+                         <p>Working Hours</p>
+                      <h6>Monday-Saturday,8am-6pm</h6>
+                   <p>Phone Number</p>
+              <h6>07032744163</h6>
+           </div>
+        </div>
+    </div>
+    <div class=" bootstrap-icons w-50 d-flex">
+        <i class="bi bi-gift"></i>
+           <div class="text-start mx-2 Ikeja">
+               <p>KongaShop Gbagada Konga Store</p>
+                  <h6>1 Redemption Crescent</h6>
+                    <hr>
+                        <div class="text-start Ikeja ">
+                       <p>Working Hours</p>
+                    <h6>Monday-Saturday,8am-6pm</h6>
+                 <p>Phone Number</p>
+            <h6>09120146206</h6>
+         </div>
+      </div>
+  </div>
+  <div class=" bootstrap-icons w-50 d-flex">
+    <i class="bi bi-gift"></i>
+       <div class="text-start mx-2 Ikeja">
+           <p>KongaShop Surulere Konga Store</p>
+              <h6>78 Bode Thomas Road</h6>
+                <hr>
+                    <div class="text-start Ikeja ">
+                   <p>Working Hours</p>
+                <h6>Monday-Saturday,8am-6pm</h6>
+             <p>Phone Number</p>
+        <h6>09010401207</h6>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="row">
+<div class="flex-container ">
+<div class=" bootstrap-icons w-50 d-flex">
+<i class="bi bi-gift"></i>
+<div class="text-start mx-2 Ikeja">
+ <p>KongaShop Ikoyi Konga Store</p>
+    <h6> 2 Norman Williams By Keffi Off Awolowo Road</h6>
+      <hr>
+          <div class="text-start Ikeja ">
+         <p>Working Hours</p>
+      <h6>Monday-Saturday,8am-6pm</h6>
+   <p>Phone Number</p>
+<h6>08095460751</h6>
+</div>
+</div>
+</div>
+<div class=" bootstrap-icons w-50 d-flex">
+<i class="bi bi-gift"></i>
+<div class="text-start mx-2 Ikeja">
+<p>KongaShop Airport Road Konga Store</p>
+  <h6>33 Muritala Mohammed Airport Road</h6>
+    <hr>
+        <div class="text-start Ikeja ">
+       <p>Working Hours</p>
+    <h6>Monday-Saturday,8am-6pm</h6>
+ <p>Phone Number</p>
+<h6>08090235696</h6>
+</div>
+</div>
+</div>
+<div class=" bootstrap-icons w-50 d-flex">
+<i class="bi bi-gift"></i>
+<div class="text-start mx-2 Ikeja">
+<p>KongaShop Admiralty Konga Store</p>
+<h6>Plot 6 No 69a Admiralty Way Lekki, Lagos</h6>
+<hr>
+    <div class="text-start Ikeja ">
+   <p>Working Hours</p>
+<h6>Monday-Saturday,8am-6pm</h6>
+<p>Phone Number</p>
+<h6>09036033723</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="row">
+<div class="flex-container ">
+<div class=" bootstrap-icons w-50 d-flex">
+<i class="bi bi-gift"></i>
+<div class="text-start mx-2 Ikeja">
+ <p>KongaShop Cherub Mall Konga Store</p>
+    <h6>Km 18 Lekki Epe Express Way, Alpha Beach</h6>
+      <hr>
+          <div class="text-start Ikeja ">
+         <p>Working Hours</p>
+      <h6>Monday-Saturday,8am-6pm</h6>
+   <p>Phone Number</p>
+<h6>08028339802</h6>
+</div>
+</div>
+</div>
+<div class=" bootstrap-icons w-50 d-flex">
+<i class="bi bi-gift"></i>
+<div class="text-start mx-2 Ikeja">
+<p>KongaShop Abuja1 Konga Store</p>
+  <h6>Plot 20 Port Harcourt Crescent, Area 11</h6>
+    <hr>
+        <div class="text-start Ikeja ">
+       <p>Working Hours</p>
+    <h6>Monday-Saturday,8am-6pm</h6>
+ <p>Phone Number</p>
+<h6>08028342515</h6>
+</div>
+</div>
+</div>
+<div class=" bootstrap-icons w-50 d-flex">
+<i class="bi bi-gift"></i>
+<div class="text-start mx-2 Ikeja">
+<p>KongaShop Abuja2 Konga Store</p>
+<h6>Banex Plaza Beside Unity Bank, Wuse</h6>
+<hr>
+    <div class="text-start Ikeja ">
+   <p>Working Hours</p>
+<h6>Monday-Saturday,8am-6pm</h6>
+<p>Phone Number</p>
+<h6>09070814351</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container d-flex gap-5 spread ">
+    <div class="col-lg-2">
+       <h6>EMAIL SUPPORT</h6>
+       <P >help@konga.com</P>
+    </div>
+    <div class="col-lg-2">
+    <h6>PHONE SUPPORT</h6>
+    <P >
+        0708 063 5700, 0201 888 3435</P>
+ </div>
+ <div class="col-lg-2">
+ <h6>WHATSAPP</h6>
+    <p>0907 0038 400, 0809 460 5555</p>
+</div>
+<div class="col-lg-2">
+       <h6>GET LATEST DEALS
+       <p>Our best promotions sent to your inbox.</p>
+    </div>
+    <div class="col-lg-2">
+        <input type="email" id="email" name="email" required placeholder="Email Address" style="width: 250px; height: 50px;">
+ </div>
+ </section> 
+
+ <footer class="bg-dark text-white pt-4">
+   <div class="container-fluid">
+       <div class="row">
+         <!-- <div class="col-md mb-4 ">
+           <img src="https://via.placeholder.com/150" alt="Payment Methods" class="img-fluid">
+       </div> -->
+         
+         <!-- Customer Service -->
+           <div class="col-md mb-4 mx-4">
+               <h5>ABOUT KONGA</h5>
+               <ul class="list-unstyled">
+                   <li><a href="#!" class="text-white">Contact us</a></li>
+                   <li><a href="#!" class="text-white">About Us</a></li>
+                   <li><a href="#!" class="text-white">Careers</a></li>
+                   <li><a href="#!" class="text-white">Our Blog</a></li>
+                   <li><a href="#!" class="text-white">Forum</a></li>
+                   <li><a href="#!" class="text-white">Terms and Conditions</a></li>      
+               </ul>
+           </div>
+           <!-- About Us -->
+           <div class="col-md mb-4">
+               <h5>PAYMENT</h5>
+               <ul class="list-unstyled">
+                   <li><a href="#!" class="text-white">Konga Pay</a></li>
+                   <li><a href="#!" class="text-white">Wallet</a></li>
+                   <li><a href="#!" class="text-white">Verve</a></li>
+                   <li><a href="#!" class="text-white">Mastercard</a></li>
+                   <li><a href="#!" class="text-white">Visa</a></li>
+               </ul>
+           </div>
+           
+           <!-- Connect with Us -->
+           <div class="col-md mb-4">
+               <h5>BUYING ON KONGA</h5>
+               <ul class="list-unstyled">
+                   <li><a href="#!" class="text-white"> Buyer Safety Center</a></li>
+                   <li><a href="#!" class="text-white">FAQS</a></li>
+                   <li><a href="#!" class="text-white"> Delivery</a></li>
+                   <li><a href="#!" class="text-white">Konga Return Policy</a></li>
+                   <li><a href="#!" class="text-white"> Digital Service</a></li>
+                   <li><a href="#!" class="text-white">Bulk purchase</a></li>
+               </ul>
+           </div>
+           
+           <div class="col-md mb-4">
+             <h5>MORE INFO</h5>
+             <ul class="list-unstyled">
+                 <li><a href="#!" class="text-white">Site Map</a></li>
+                 <li><a href="#!" class="text-white">Track My Order</a></li>
+                 <li><a href="#!" class="text-white">Privacy Policy</a></li>
+                 <li><a href="#!" class="text-white">Authentic Item Policy</a></li>
+             </ul>
+         </div>
+ 
+         <div class="col-md mb-4">
+           <h5>MAKE MONEY ON KONGA</h5>
+           <ul class="list-unstyled">
+               <li><a href="#!" class="text-white">Site Map</a></li>
+             </ul>
+           </div>
+ 
+         <div class="col-md mb-4">
+           <h5>CONNECT WITH US</h5>
+           <ul class="list-unstyled">
+               <li><a href="#!" class="text-white"><i class="fab fa-facebook"></i> Facebook</a></li>
+               <li><a href="#!" class="text-white"><i class="fab fa-twitter"></i> Twitter</a></li>
+               <li><a href="#!" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
+               <li><a href="#!" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+           </ul>
+       </div>
+ 
+         </div>
+       <div class="text-center py-3 border-top border-secondary mt-4">
+           &copy; 2024 Konga. All Rights Reserved.
+       </div>
+   </div>
+ </footer>
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+3pqtD5v2zDMCf39eMC78dG35qbg7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
